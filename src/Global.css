@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Lusane";
+    src: url("/public/fonts/Lausanne-300.woff2");
+}
+
+@font-face {
+    font-family: "Lusane2";
+    src: url("/public/fonts/Lausanne-500.woff2");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("/public/fonts/roboto-latin-regular.woff2");
+}
+
+@font-face {
+    font-family: "Popins";
+    src: url("/public/fonts/Poppins-Regular\ \(3\).ttf");
+}
+
+
+html{
+   font-family: "Lusane";
+   color:#fff;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Lusane2";
+    color:#fff;
+}
