@@ -7,7 +7,7 @@ import Clock from '../components/comman/Clock'
 
 const Home = () => {
   return (
-    <div>
+    <div className='overflow-hidden'>
         <div className='h-screen w-screen fixed z-10'>
             <Video />
         </div>
@@ -16,7 +16,7 @@ const Home = () => {
             <HomeHero />
             <HomeBottom />
         </div>
-        <div className="fixed bottom-0 left-0 z-40 pb-4 pl-2">
+        <div className="fixed bottom-0 left-0 z-80 pb-4 pl-2">
             <Clock />
         </div>
     </div>

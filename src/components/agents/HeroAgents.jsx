@@ -8,6 +8,7 @@ const HeroAgents = () => {
       gsap.to(headingRefs.current,{
        y:0,
        duration:1,
+       delay:1.4,
        ease:'power3.inOut',
       })
   })
@@ -23,7 +24,7 @@ const HeroAgents = () => {
         </h1>
       </div>
       <div>
-        <p className='!text-black text-5xl pr-2 pl-[40%]'>
+        <p className='!mix-blend-difference text-black text-5xl pr-2 pl-[40%] '>
         {
           Array.from({length:16},(_,i)=>(
             <span key={i} className='inline-block'>&nbsp;</span>

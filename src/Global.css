@@ -26,7 +26,45 @@ html{
    color:#fff;
 }
 
+body{
+    background-color: #010101fa;
+    overflow-x: hidden;
+}
+
 h1,h2,h3,h4,h5,h6{
     font-family: "Lusane2";
     color:#fff;
 }
+
+
+#all-links h2{
+    font-size: 8vw;
+    line-height: 0.8;
+    padding-top:18px;
+    white-space: nowrap;
+    color:#000;
+}
+
+@layer components{
+   #all-links img{
+    @apply w-65 h-23 shrink-0  rounded-full object-cover;
+   }
+}
+
+.marquee-container{
+    z-index: 30;
+}
+
+
+.marquee{
+    opacity: 0;
+    transition: transform 2.35s ease,opacity 0.3s linear;
+    z-index: 40;
+}
+
+.marquee-container:hover  .marquee{
+    transform: translateX(-1000px);
+    opacity: 1;
+}
+
+
