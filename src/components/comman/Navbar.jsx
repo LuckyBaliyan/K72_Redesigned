@@ -45,13 +45,20 @@ const Navbar = () => {
         onMouseLeave={()=>{
             navRef.current.style.height = `0%`
         }}
-        className=' h-15 bg-black relative cursor-pointer w-[15vw]'>
+        className={`${color === '/projects'?'h-32':'h-15'} bg-black relative cursor-pointer w-[15vw]`}>
             <div className='relative h-full w-full flex flex-col gap-1 justify-center z-20 items-end p-2'>
-                <div className="w-16 h-0.5  bg-white"></div>
-                <div className="w-12 h-0.5  bg-white"></div>
+                <div className="w-16 h-0.5 z-30 bg-white"></div>
+                <div className="w-12 h-0.5 z-30 bg-white"></div>
             </div>
-            <div ref={navRef} className='w-full h-0 absolute top-0 left-0 transition-all duration-200 ease-in-out
-             bg-[#D3FD50]'></div>
+            <div ref={navRef} className='w-full h-0 absolute z-10 top-0 left-0 transition-all duration-200 ease-in-out
+             bg-[#D3FD50]'>
+             </div>
+              <div className={`bg-black w-65 h-24 absolute flex ${color !== '/'?'opacity-100':'opacity-0'} -left-60 top-0  p-2`}>
+                <p className='text-[1.5vw] self-end uppercase'>Agents</p>
+              </div>
+              <div className={`bg-black w-65 h-16 absolute flex  ${color !== '/'?'opacity-100':'opacity-0'} -left-125 top-0 p-2`}>
+                <p className='text-[1.5vw] self-end uppercase'>Works (16)</p>
+              </div>
         </div>
     </div>
   )

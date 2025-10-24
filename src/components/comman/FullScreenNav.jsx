@@ -107,7 +107,7 @@ useGSAP(() => {
                        </path>
                     </svg>
                 </div>
-                <div onClick={()=>setNavOpen(false)} className='h-32 absolute top-4 right-2 w-32 '>
+                <div onClick={()=>setNavOpen(false)} className='h-32 absolute top-4 cursor-pointer right-2 w-32 '>
                    <div className='h-32 w-0.5 left-5 origin-top -rotate-45 absolute bg-white cursor-pointer 
                    '></div>
                    <div className='h-32 w-0.5 right-2 origin-top rotate-45 absolute bg-white cursor-pointer 

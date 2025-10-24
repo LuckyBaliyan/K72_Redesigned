@@ -21,7 +21,7 @@ const Agents = () => {
       clipPath:'polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%)',
       x:0,
       duration:0.8,
-      delay:1.3,
+      delay:1.4,
       ease:"power3.inOut"
      });
 

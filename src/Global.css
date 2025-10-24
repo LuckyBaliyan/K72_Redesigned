@@ -67,4 +67,12 @@ h1,h2,h3,h4,h5,h6{
     opacity: 1;
 }
 
+.project-wrap:hover .scaleme{
+    transform: scale(1.08);
+}
+
+.project-wrap:hover .opac{
+  opacity: 1;
+}
+
 
