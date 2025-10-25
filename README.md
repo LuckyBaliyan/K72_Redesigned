@@ -23,15 +23,15 @@ It’s a front-end-focused project built to explore modern web animations, paral
 
 ## Screenshots
 
-(public/screenShots/s1.png)
+![First](./public/screenShots/s1.png)
 
-(public/screenShots/s2.png)
+![Second](./public/screenShots/s2.png)
 
-(public/screenShots/s3.png)
+![Third](./public/screenShots/s3.png)
 
-(public/screenShots/s4.png)
+![Fourth](./public/screenShots/s4.png)
 
-(public/screenShots/s5.png)
+![Fifth](./public/screenShots/s5.png)
 
 
 
@@ -148,6 +148,8 @@ You are free to:
 This project is intended **for educational purposes only**.
  While you are free to use and modify the code, the author assumes **noliability**  for 
  any issues arising from its use in production environments.
+
+
 ## 💬 Acknowledgments
 
 Inspired by the original K72 website for its creativity and motion design brilliance.
