@@ -5,6 +5,9 @@ import Agents from './pages/Agents';
 import Navbar from './components/comman/Navbar';
 import FullScreenNav from './components/comman/FullScreenNav';
 import LocomotiveScroll from 'locomotive-scroll';
+import { useRef } from 'react';
+import ContactUs from './pages/ContactUs';
+import { useLocomotiveScroll } from './hooks/Locomotive';
 
 
 
@@ -20,6 +23,7 @@ const App = () => {
         <Route path="/" element={<Home/>}/>
         <Route path="/projects" element={<Projects/>}/>
         <Route path="/agents" element={<Agents/>} />
+        <Route path="/contact" element={<ContactUs/>} />
       </Routes>
     </div>
   )

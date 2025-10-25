@@ -92,7 +92,7 @@ useGSAP(() => {
             </div>
            <div ref={fullnavLinkRef} className='relative'>
             <div className='flex w-full justify-between p-4 relative items-start'>
-                <div>
+                <div onClick={()=>{navigate("/");setNavOpen(false)}} className='cursor-pointer'>
                     <svg fill={`white`}  
                     xmlns="http://www.w3.org/2000/svg" width="103" 
                     height="44" viewBox="0 0 103 44">
@@ -124,7 +124,7 @@ useGSAP(() => {
                 </div>
             </div>
             <div id='all-links' className='uppercase py-15'>
-                <div ref={el => linkRefs.current[0] = el} className='border-y-[0.02px] relative   marquee-container border-[#d5d5d5]'>
+                <div ref={el => linkRefs.current[0] = el} className='border-y-[0.02px] relative transition   marquee-container border-[#d5d5d5]'>
                     <h1 onClick={()=>handleNavigate("w")} className='text-[9vw] relative leading-[0.8] tracking-tight pt-4 cursor-pointer text-center'>Work</h1>
                     <div className='absolute pointer-events-none top-0 scale-y-105
                      bg-[#D3FD50] h-[102%] cursor-pointer  
@@ -133,55 +133,55 @@ useGSAP(() => {
                         <h2 className='whitespace-nowrap '>
                             See Evrything
                         </h2>
-                        <img  src="/images/nav.jpg" alt="" />
+                        <img  src="/images/b1.jpg" alt="" />
                         <h2 className='whitespace-nowrap'>
                             See Everything
                         </h2>
-                        <img src="/images/nav.jpg" alt=""/>
+                        <img src="/images/b2.jpg" alt=""/>
                       </div>
                       <div className='flex  items-center gap-2'>
                         <h2 className='whitespace-nowrap '>
                             See Evrything
                         </h2>
-                        <img src="/images/nav.jpg" alt="" />
+                        <img src="/images/b1.jpg" alt="" />
                         <h2 className='whitespace-nowrap'>
                             See Everything
                         </h2>
-                        <img src="/images/nav.jpg" alt="" />
+                        <img src="/images/b2.jpg" alt="" />
                       </div>
                        <div className='flex   items-center gap-2'>
                         <h2 className='whitespace-nowrap '>
                             See Evrything
                         </h2>
-                        <img src="/images/nav.jpg" alt="" />
+                        <img src="/images/b1.jpg" alt="" />
                         <h2 className='whitespace-nowrap'>
                             See Everything
                         </h2>
-                        <img src="/images/nav.jpg" alt="" />
+                        <img src="/images/b2.jpg" alt="" />
                       </div>
                        <div className='flex  items-center gap-2'>
                         <h2 className='whitespace-nowrap '>
                             See Evrything
                         </h2>
-                        <img src="/images/nav.jpg" alt="" />
+                        <img src="/images/b1.jpg" alt="" />
                         <h2 className='whitespace-nowrap'>
                             See Everything
                         </h2>
-                        <img src="/images/nav.jpg" alt="" />
+                        <img src="/images/b2.jpg" alt="" />
                       </div>
                        <div className='flex   items-center gap-2'>
                         <h2 className='whitespace-nowrap '>
                             See Evrything
                         </h2>
-                        <img src="/images/nav.jpg" alt="" />
+                        <img src="/images/b1.jpg" alt="" />
                         <h2 className='whitespace-nowrap'>
                             See Everything
                         </h2>
-                        <img src="/images/nav.jpg" alt="" />
+                        <img src="/images/b2.jpg" alt="" />
                       </div>
                     </div> 
                 </div>
-                <div ref={el => linkRefs.current[1] = el} className='border-y-[0.02px] relative  border-[#d5d5d5] marquee-container'>
+                <div ref={el => linkRefs.current[1] = el} className='border-b-[0.02px] relative  border-[#d5d5d5] marquee-container'>
                     <h1  onClick={()=>handleNavigate("a")} className='text-[9vw] relative leading-[0.8] tracking-tight pt-4 cursor-pointer text-center'>
                         Agency
                     </h1>
@@ -192,112 +192,112 @@ useGSAP(() => {
                         <h2 className='whitespace-nowrap '>
                             Know Us 
                         </h2>
-                        <img  src="/images/nav.jpg" alt="" />
+                        <img  src="/images/b6.jpg" alt="" />
                         <h2 className='whitespace-nowrap'>
                             Know us
                         </h2>
-                        <img src="/images/nav.jpg" alt=""/>
+                        <img src="/images/b5.jpg" alt=""/>
                       </div>
                       <div className='flex  items-center gap-2'>
                         <h2 className='whitespace-nowrap '>
                         Know us
                         </h2>
-                        <img src="/images/nav.jpg" alt="" />
+                        <img src="/images/b6.jpg" alt="" />
                         <h2 className='whitespace-nowrap'>
                             Know us
                         </h2>
-                        <img src="/images/nav.jpg" alt="" />
+                        <img src="/images/b5.jpg" alt="" />
                       </div>
                        <div className='flex   items-center gap-2'>
                         <h2 className='whitespace-nowrap '>
                         Know us
                         </h2>
-                        <img src="/images/nav.jpg" alt="" />
+                        <img src="/images/b6.jpg" alt="" />
                         <h2 className='whitespace-nowrap'>
                             Know us
                         </h2>
-                        <img src="/images/nav.jpg" alt="" />
+                        <img src="/images/b5.jpg" alt="" />
                       </div>
                        <div className='flex  items-center gap-2'>
                         <h2 className='whitespace-nowrap '>
                         Know us
                         </h2>
-                        <img src="/images/nav.jpg" alt="" />
+                        <img src="/images/b6.jpg" alt="" />
                         <h2 className='whitespace-nowrap'>
                             Know us
                         </h2>
-                        <img src="/images/nav.jpg" alt="" />
+                        <img src="/images/b5.jpg" alt="" />
                       </div>
                        <div className='flex   items-center gap-2'>
                         <h2 className='whitespace-nowrap '>
                         Know us
                         </h2>
-                        <img src="/images/nav.jpg" alt="" />
+                        <img src="/images/b6.jpg" alt="" />
                         <h2 className='whitespace-nowrap'>
                             Know us
                         </h2>
-                        <img src="/images/nav.jpg" alt="" />
+                        <img src="/images/b5.jpg" alt="" />
                       </div>
                     </div> 
                 </div>
-                <div ref={el => linkRefs.current[2] = el} className='border-y-[0.02px] relative  border-[#d5d5d5] marquee-container'>
-                    <h1 className='text-[9vw] relative leading-[0.8] tracking-tight pt-4 cursor-pointer text-center'>Contact</h1>
+                <div ref={el => linkRefs.current[2] = el} className='border-b-[0.02px] relative  border-[#d5d5d5] marquee-container'>
+                    <h1 onClick={()=>{navigate("/contact");setNavOpen(false)}} className='text-[9vw] relative leading-[0.8] tracking-tight pt-4 cursor-pointer text-center'>Contact</h1>
                     <div className='absolute top-0 scale-y-105  translate-x-[0%] 
-                     bg-[#D3FD50] h-[100%] cursor-pointer  
+                     bg-[#D3FD50] pointer-events-none h-[100%] cursor-pointer  
                      -translate-y-[0%] left-0 flex marquee'>
                         <div className=' flex  items-center gap-4'>
                         <h2 className='whitespace-nowrap '>
                             Sen us a fax
                         </h2>
-                        <img  src="/images/nav.jpg" alt="" />
+                        <img  src="/images/b8.jpg" alt="" />
                         <h2 className='whitespace-nowrap'>
                             Seend us a fax
                         </h2>
-                        <img src="/images/nav.jpg" alt=""/>
+                        <img src="/images/b7.jpg" alt=""/>
                       </div>
                       <div className='flex  items-center gap-2'>
                         <h2 className='whitespace-nowrap '>
                             Send us a fax
                         </h2>
-                        <img src="/images/nav.jpg" alt="" />
+                        <img src="/images/b8.jpg" alt="" />
                         <h2 className='whitespace-nowrap'>
                             Seend us a fax
                         </h2>
-                        <img src="/images/nav.jpg" alt="" />
+                        <img src="/images/b7.jpg" alt="" />
                       </div>
                        <div className='flex   items-center gap-2'>
                         <h2 className='whitespace-nowrap '>
                             Send us a fax
                         </h2>
-                        <img src="/images/nav.jpg" alt="" />
+                        <img src="/images/b8.jpg" alt="" />
                         <h2 className='whitespace-nowrap'>
                             Seend us a fax
                         </h2>
-                        <img src="/images/nav.jpg" alt="" />
+                        <img src="/images/b7.jpg" alt="" />
                       </div>
                        <div className='flex  items-center gap-2'>
                         <h2 className='whitespace-nowrap '>
                             Send us a fax
                         </h2>
-                        <img src="/images/nav.jpg" alt="" />
+                        <img src="/images/b8.jpg" alt="" />
                         <h2 className='whitespace-nowrap'>
                             Seend us a fax
                         </h2>
-                        <img src="/images/nav.jpg" alt="" />
+                        <img src="/images/b7.jpg" alt="" />
                       </div>
                        <div className='flex   items-center gap-2'>
                         <h2 className='whitespace-nowrap '>
                             Send us a fax
                         </h2>
-                        <img src="/images/nav.jpg" alt="" />
+                        <img src="/images/b8.jpg" alt="" />
                         <h2 className='whitespace-nowrap'>
                             Seend us a fax
                         </h2>
-                        <img src="/images/nav.jpg" alt="" />
+                        <img src="/images/b7.jpg" alt="" />
                       </div>
                     </div> 
                 </div>
-                <div ref={el => linkRefs.current[3] = el} className='border-y-[0.02px] relative  border-[#d5d5d5] marquee-container'>
+                <div ref={el => linkRefs.current[3] = el} className='border-b-[0.02px] relative  border-[#d5d5d5] marquee-container'>
                     <h1 className='text-[9vw] relative leading-[0.8] tracking-tight pt-4 cursor-pointer text-center'>Blog</h1>
                     <div className='absolute top-0 scale-y-105  translate-x-[0%] 
                      bg-[#D3FD50] h-[100%] cursor-pointer  
@@ -306,51 +306,51 @@ useGSAP(() => {
                         <h2 className='whitespace-nowrap '>
                         Read Articals
                         </h2>
-                        <img  src="/images/nav.jpg" alt="" />
+                        <img  src="/images/b3.gif" alt="" />
                         <h2 className='whitespace-nowrap'>
                             Read Articals
                         </h2>
-                        <img src="/images/nav.jpg" alt=""/>
+                        <img src="/images/b4.jpg" alt=""/>
                       </div>
                       <div className='flex  items-center gap-2'>
                         <h2 className='whitespace-nowrap '>
                         Read Articals
                         </h2>
-                        <img src="/images/nav.jpg" alt="" />
+                        <img src="/images/b3.gif" alt="" />
                         <h2 className='whitespace-nowrap'>
                             Read Articals
                         </h2>
-                        <img src="/images/nav.jpg" alt="" />
+                        <img src="/images/b4.jpg" alt="" />
                       </div>
                        <div className='flex   items-center gap-2'>
                         <h2 className='whitespace-nowrap '>
                         Read Articals
                         </h2>
-                        <img src="/images/nav.jpg" alt="" />
+                        <img src="/images/b3.gif" alt="" />
                         <h2 className='whitespace-nowrap'>
                             Read Articals
                         </h2>
-                        <img src="/images/nav.jpg" alt="" />
+                        <img src="/images/b4.jpg" alt="" />
                       </div>
                        <div className='flex  items-center gap-2'>
                         <h2 className='whitespace-nowrap '>
                         Read Articals
                         </h2>
-                        <img src="/images/nav.jpg" alt="" />
+                        <img src="/images/b3.gif" alt="" />
                         <h2 className='whitespace-nowrap'>
                             Read Articals
                         </h2>
-                        <img src="/images/nav.jpg" alt="" />
+                        <img src="/images/b4.jpg" alt="" />
                       </div>
                        <div className='flex   items-center gap-2'>
                         <h2 className='whitespace-nowrap '>
                         Read Articals
                         </h2>
-                        <img src="/images/nav.jpg" alt="" />
+                        <img src="/images/b3.gif" alt="" />
                         <h2 className='whitespace-nowrap'>
                             Read Articals
                         </h2>
-                        <img src="/images/nav.jpg" alt="" />
+                        <img src="/images/b4.jpg" alt="" />
                       </div>
                     </div> 
                 </div>

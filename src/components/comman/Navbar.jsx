@@ -52,19 +52,21 @@ const Navbar = () => {
                if (bar) bar.style.backgroundColor = '#fff';
              });
         }}
-        className={`${color !== '/'?'h-32':'h-15'} bg-black relative cursor-pointer w-[15vw]`}>
+        className={`${color !== '/'?'h-32':'h-15'} 
+        ${color === '/contact'?'bg-white !text-black':'bg-black !text-white'} 
+        relative cursor-pointer w-[15vw]`}>
             <div className='relative h-full w-full flex flex-col gap-1 justify-center z-20 items-end p-2'>
-                <div ref={el=>barRefs.current[0] = el} className="w-16 h-0.5 z-30 bg-white"></div>
-                <div ref={el=>barRefs.current[1] = el} className="w-12 h-0.5 z-30 bg-white"></div>
+                <div ref={el=>barRefs.current[0] = el} className={`w-16 h-0.5 z-30 ${color === '/contact'?'bg-black':'bg-white'}`}></div>
+                <div ref={el=>barRefs.current[1] = el} className={`w-12 h-0.5 z-30 ${color === '/contact'?'bg-black':'bg-white'}`}></div>
             </div>
             <div ref={navRef} className='w-full h-0 absolute z-10 top-0 left-0 transition-all duration-200 ease-in-out
              bg-[#D3FD50]'>
              </div>
         </div>
-        <div onClick={()=>{navigate("/agents")}} className={`bg-black cursor-pointer w-65 h-24 absolute flex ${color !== '/'?'opacity-100':'opacity-0'} right-50 top-0  p-2`}>
+        <div onClick={()=>{navigate("/agents")}} className={`${color === '/contact'?'bg-white !text-black':'bg-black !text-white'}  cursor-pointer w-65 h-24 absolute flex ${color !== '/'?'opacity-100':'opacity-0'} right-50 top-0  p-2`}>
                 <p className='text-[1.5vw] self-end uppercase'>Agents</p>
               </div>
-              <div onClick={()=>{navigate("/projects")}} className={`bg-black cursor-pointer w-65 h-16 absolute flex  ${color !== '/'?'opacity-100':'opacity-0'} right-115 top-0 p-2`}>
+              <div onClick={()=>{navigate("/projects")}} className={`${color === '/contact'?'bg-white !text-black':'bg-black !text-white'}  cursor-pointer w-65 h-16 absolute flex  ${color !== '/'?'opacity-100':'opacity-0'} right-115 top-0 p-2`}>
                 <p className='text-[1.5vw] self-end uppercase'>Works (16)</p>
         </div>
     </div>
