@@ -3,7 +3,8 @@ import HeroAgents from '../components/agents/HeroAgents'
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import {ScrollTrigger} from 'gsap/all';
-import Info from '../components/agents/Info';
+import Footer from '../components/comman/Footer';
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -49,9 +50,9 @@ const Agents = () => {
   },[])
 
   return (
-   <div className='bg-white'>
+   <div >
 
-    <div className='w-full h-screen section1 relative py-1'>
+    <div  className='w-full pb-30 !bg-white min-h-screen section1 relative py-1'>
       <div ref={imageRef} className='h-[20vw] z-[0] w-[15vw]   absolute top-50 left-[30vw] overflow-hidden rounded-2xl'>
         <img ref={figRef} src="/images/1.jpg" alt="" />
       </div>
@@ -60,7 +61,8 @@ const Agents = () => {
       </div>
     </div>
 
-    <div className='section2 h-screen w-full'>
+    <div>
+      <Footer />
     </div>
 
    </div>

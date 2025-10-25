@@ -1,5 +1,5 @@
 import React,{useRef,useContext} from 'react'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { NavContext } from '../../context/NavProvider';
@@ -11,9 +11,18 @@ const FullScreenNav = () => {
   const fullScreenNavRef = useRef(null);
   const linkRefs = useRef([]);
 
+  const navigate = useNavigate();
+
   const {navOpen,setNavOpen} = useContext(NavContext);
 
   console.log(navOpen);
+
+  const handleNavigate = (route)=>{
+    if(route === "w") navigate("/projects");
+    if(route === "a") navigate("/agents");
+
+    setNavOpen(false);
+  }
 
 
   function gsapAnimation(){
@@ -68,7 +77,7 @@ useGSAP(() => {
   } else {
     gsapReverseAnimation();
   }
-}, [navOpen]);
+}, [navOpen,navigate]);
 
   return (
         <div id='fullscreeen' ref={fullScreenNavRef} className='hidden h-screen w-full  absolute top-0 left-0 z-60'>
@@ -116,8 +125,8 @@ useGSAP(() => {
             </div>
             <div id='all-links' className='uppercase py-15'>
                 <div ref={el => linkRefs.current[0] = el} className='border-y-[0.02px] relative   marquee-container border-[#d5d5d5]'>
-                    <h1 className='text-[9vw] relative leading-[0.8] tracking-tight pt-4 cursor-pointer text-center'>Work</h1>
-                    <div className='absolute top-0 scale-y-105
+                    <h1 onClick={()=>handleNavigate("w")} className='text-[9vw] relative leading-[0.8] tracking-tight pt-4 cursor-pointer text-center'>Work</h1>
+                    <div className='absolute pointer-events-none top-0 scale-y-105
                      bg-[#D3FD50] h-[102%] cursor-pointer  
                       left-0 flex marquee'>
                         <div className=' flex  items-center gap-4'>
@@ -173,10 +182,10 @@ useGSAP(() => {
                     </div> 
                 </div>
                 <div ref={el => linkRefs.current[1] = el} className='border-y-[0.02px] relative  border-[#d5d5d5] marquee-container'>
-                    <h1 className='text-[9vw] relative leading-[0.8] tracking-tight pt-4 cursor-pointer text-center'>
+                    <h1  onClick={()=>handleNavigate("a")} className='text-[9vw] relative leading-[0.8] tracking-tight pt-4 cursor-pointer text-center'>
                         Agency
                     </h1>
-                    <div className='absolute top-0 scale-y-105  translate-x-[0%] 
+                    <div className='absolute pointer-events-none top-0 scale-y-105  translate-x-[0%] 
                      bg-[#D3FD50] h-[102%] cursor-pointer  
                      -translate-y-[0%] left-0 flex marquee'>
                         <div className=' flex  items-center gap-4'>

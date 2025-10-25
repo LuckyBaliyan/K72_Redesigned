@@ -4,6 +4,7 @@ import { useProject } from '../context/ProjectProvider';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
+import Footer from '../components/comman/Footer';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -110,8 +111,8 @@ useGSAP(() => {
     stagger:{amount:0.8},
     scrollTrigger:{
       trigger:gridRef.current,
-      start: "top 40%",   // when the top of card is near bottom of viewport
-      end: "top -800%",
+      start: "top 40%", 
+      end: "top -580%",
       scrub:true,
     }
   })
@@ -130,14 +131,14 @@ useGSAP(() => {
        </div>
        </div>
         <div className='-mt-15 relative'>
-        <div className={`sticky dets w-full  bg-white flex items-center justify-between !text-black border-2 
+        <div className={`sticky dets w-full  bg-white flex items-center justify-between !text-black border 
         border-r-0 border-l-0 transition-all duration-500 border-[#1e1e1e] z-40 top-0 left-0 px-4 py-2 ${selectedProject.sn === ''?'-translate-y-[900%] opacity-0':'-translate-y-[0%] opacity-100'}`}>
          <p className='text-[2vw] font-[Lusane2] relative'>{selectedProject.sn}
          </p>
          <h5 className='!text-black text-[2vw] font-[Lusane2]'>{selectedProject.name}</h5>
          <p className='text-[2vw] font-[Lusane2]'>{selectedProject.date}</p>
         </div>
-         <div className='px-2 pb-2 bg-white' ref={gridRef}>
+         <div  className='px-2 pb-2 bg-white' ref={gridRef}>
             {
             projects.slice(0,6).map((i,indx)=>(
               <div  key={i.id} ref={(el) => cardRefs.current[indx] = el} className='w-full mb-2 flex h-[800px]  gap-2 cursor-pointer '>
@@ -148,7 +149,10 @@ useGSAP(() => {
             }
             </div>
          </div>
-        </div>
+         <div>
+          <Footer />
+         </div>
+    </div>
   )
 }
 

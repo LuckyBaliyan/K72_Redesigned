@@ -17,7 +17,7 @@ const ProjectsGrid = ({img,img2,name,name2,sn2,sn,date,date2}) => {
 
   return (
           <>
-            <div onMouseEnter={()=>handleMouseEnter(name,date,sn)} onMouseLeave={()=>handleMouseLeave('Project','','')} className='w-1/2 h-full overflow-hidden  rounded-none transition-all duration-150  relative hover:rounded-4xl project-wrap'>
+            <div data-scroll-section onMouseEnter={()=>handleMouseEnter(name,date,sn)} onMouseLeave={()=>handleMouseLeave('Project','','')} className='w-1/2 h-full overflow-hidden  rounded-none transition-all duration-150  relative hover:rounded-4xl project-wrap'>
                <div className="flex items-center !bg-black/35 z-20  justify-center absolute top-0 left-0 w-full h-full 
                opacity-0 transition-opacity duration-150 ease-in-out opac">
                   <div className=' border-1 border-white py-1 px-4 rounded-full backdrop-blur-[1px] 

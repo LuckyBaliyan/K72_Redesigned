@@ -2,14 +2,18 @@ import { Routes,Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Agents from './pages/Agents';
-import Transition from './components/comman/Transition';
 import Navbar from './components/comman/Navbar';
 import FullScreenNav from './components/comman/FullScreenNav';
+import LocomotiveScroll from 'locomotive-scroll';
+
 
 
 const App = () => {  
+
+ const scroll = new LocomotiveScroll();
+  
   return (
-    <div>
+    <div data-scroll-container>
       <Navbar/>
       <FullScreenNav />
       <Routes>

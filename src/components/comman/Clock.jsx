@@ -26,7 +26,7 @@ const Clock = () => {
   return (
     <div className="flex items-center gap-2 text-white font-semibold text-sm tracking-wider">
       <Globe className="w-6 h-6 text-white" />
-      <p className="text-md">{`MONTREAL_${time}`}</p>
+      <p className="text-md leading-[1.3] pt-1">{`MONTREAL_${time}`}</p>
     </div>
   );
 };
